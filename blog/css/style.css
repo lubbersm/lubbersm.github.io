@@ -133,14 +133,15 @@ h1 {
        font-family: josefinslab, Garamond, serif; 
     letter-spacing: 0.125rem;
     font-size: 3.75rem;
-    margin: 1.125rem;
+    margin: 2rem;
     text-align: center;
+    transform: rotate(-10deg)
 
 }
 .highlight {    
     display: inline-block;
     border: 1px solid black;
-    background: maroon;
+    background: #d66b54;
     padding: 1rem 1.5rem;
     border-radius: 5px;
     border-top-left-radius: 15px;
@@ -171,6 +172,10 @@ li {
 figcaption {
     font-size: 0.75rem;
     margin-bottom: 2rem;
+    background: #d6ac4c;
+}
+figure{
+    margin: 0px
 }
 
 button {
