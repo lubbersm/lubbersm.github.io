@@ -1,0 +1,179 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
+}
+
+/* Layout */
+
+.main-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr; 
+    grid-gap: 20px;
+}
+article {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+aside {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    border-left: 3px solid black;
+    padding-left: 1rem;
+}
+
+.subsection {
+    display: flex;
+    
+}
+
+/*links and navigation*/
+
+nav a {
+    display: inline-block;
+    padding: 1.25rem 2rem;
+    
+}
+nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+/*Images and Figures*/
+
+img {
+    width: 100%
+}
+.article-image {
+    width: 33%;
+    float: left;
+    margin-right: 1rem;
+}
+
+/*Imported Typfaces*/
+
+@font-face {
+    font-family: "josefinslab";
+    src: url(../fonts/josefinslab-regular.ttf) format ('truetype');
+    font-weight: normal; 
+    font-style: normal;
+}
+
+@font-face {
+      font-family: "montserrat"; 
+    src: url(../fonts/montserrat-regular.ttf) format('truetype'); font-weight: normal; font-style: normal
+}
+
+/*Typography Styles*/
+html { font-family: monserrat, Arial, sans-serif;
+    
+}
+h1 {
+       font-family: josefinslab, Garamond, serif; 
+    letter-spacing: 0.125rem;
+    font-size: 3.75rem;
+    margin: 1.125rem;
+    text-align: center;
+
+}
+.highlight {    
+    display: inline-block;
+    border: 1px solid black;
+    background: maroon;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+h2 {
+    font-family: josefinslab, Garamond, serif; 
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;
+}
+h3{    font-family: josefinslab, Garamond, serif; 
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;}
+h4{    font-family: josefinslab, Garamond, serif; 
+    letter-spacing: 0.125rem;
+    font-size: 1.5rem;}
+
+p {
+    font-size: 0.75rem;
+    letter-spacing: 0.03125;
+    word-spacing: 0.125;
+}
+li {
+       font-size: 0.75rem;
+    letter-spacing: 0.03125;
+    word-spacing: 0.125; 
+}
+figcaption {
+    font-size: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    background: navy;
+    color: aliceblue;
+}
